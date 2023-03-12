@@ -13,7 +13,7 @@ interface NetworkContracts {
 }
 
 const protocolContracts: NetworkContracts = {
-  hardhat: {
+  localhost: {
     resolver: "0x67913A0F4F407BdBA24EBf89421A519b525a235f",
     host: "0x06B1D212B8da92b83AF328De5eef4E211Da02097",
     CFAv1: "0xED179b78D5781f93eb169730D8ad1bE7313123F4",
