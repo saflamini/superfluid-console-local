@@ -135,7 +135,7 @@ const Protocol: NextPage = () => {
                 >
                   <ListItemText
                     data-cy={"deposit"}
-                    primary={`${network.isTestnet ? 1 : 4} hour flowrate`}
+                    primary={`${network.isTestnet && network.chainId !== 31337? 1 : 4} hour flowrate`}
                     secondary={
                       <>
                         Deposit size
@@ -145,7 +145,7 @@ const Protocol: NextPage = () => {
                   />
                   <ListItemText
                     data-cy={"owed-deposit"}
-                    primary={`${network.isTestnet ? 1 : 4} hour flowrate`}
+                    primary={`${network.isTestnet && network.chainId !== 31337? 1 : 4} hour flowrate`}
                     secondary={
                       <>
                         Owed deposit size
@@ -155,7 +155,7 @@ const Protocol: NextPage = () => {
                   />
                   <ListItemText
                     data-cy={"patrician-period"}
-                    primary={`${network.isTestnet ? 12 : 30} minutes`}
+                    primary={`${network.isTestnet && network.chainId !== 31337? 12 : 30} minutes`}
                     secondary={
                       <>
                         Patrician period
